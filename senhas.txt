@@ -1,0 +1,3 @@
+pedro Senha: pedro123
+lucas Senha: lucas123
+maria senha: 123

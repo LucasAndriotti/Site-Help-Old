@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background: #23272A;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    flex-direction: column;
+    margin: 170px 0;
+    padding-bottom: 100px;
+}
+
+.container h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.menu-site {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.menu-site p {
+    height: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu-site p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-site p a:hover {
+   color: rgb(121, 192, 197);
+}
+
+.logo {
+    top: 20%;
+    position: absolute;
+    height: 50px;
+    margin: -10px 30px 0;
+}
+
+.busca-site {
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+.busca-input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.busca-btn {
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.busca-btn img {
+    height: 100%;
+}
+
+.usuario-menu {
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.usuario-menu ul {
+    height: auto;
+    list-style: none;
+    padding-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px;
+    
+}
+
+.usuario-menu ul li {
+    display: inline-block;
+    color: white;
+    padding-top: 10px;
+    margin: 0 0 0 45px; 
+}
+
+.usuario-menu ul li a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.usuario-menu ul li a:hover {
+    color: rgb(121, 192, 197);
+}
+
+.centro img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 70px;
+    width: 90%;
+    height: 50%;
+}
+
+/*Tutorial*/
+li {
+    list-style: none;
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div.newPost {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 90px 0;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.2);
+}
+
+div.newPost div.infoUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.newPost div.infoUser div.imgUser {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #333;
+}
+
+div.newPost div.infoUser strong {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #23A0FF;
+}
+
+div.newPost form.formPost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.newPost form.formPost textarea {
+    background: #FBFBFB;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #727272;
+}
+
+div.newPost form.formPost div.iconsAndButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons button {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+div.newPost form.formPost div.iconsAndButton  button.btnSubmitForm {
+    background: #23A0FF;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+div.newPost form.formPost div.iconsAndButton  button.btnSubmitForm:hover {
+    background: rgb(8, 138, 236);
+}
+
+ul.posts li.post {
+    max-width: 900px;
+    margin: 100px;
+    margin-left: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.05);
+}
+
+ul.posts li.post div.infoUserPost  {
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour {
+    margin-left: 10px;
+}
+
+ul.posts li.post div.infoUserPost div.imgUserPost {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #23A0FF;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour >strong {
+    color: #23A0FF;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour >p {
+    color: #D1D1D1;
+    font-size: 12px;
+}
+
+ul.posts li.post >p{
+    width: 100%;
+    margin: 15px;
+    font-weight: bold;
+    color: #727272;
+}
+
+ul.posts li.post div.actionBtnPost {
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost {
+    padding: 5px 20px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost img {
+    margin-right: 5px;
+}
+
+.like {
+    background: #FF6B6B;
+}
+
+.like:hover {
+    background: rgb(248, .75, .75);
+}
+
+.tutoriaissalvos {
+    height: 18px;
+}
+
+/*Home*/
+
+.conteudoPrincipal {
+    margin: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 100px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.homeImagem {
+    border-radius: 10px;
+    height: 360px;
+}
+
+#apresentacao {
+    margin: 30px;
+    font-size: larger;
+}
+
+/*Perfil*/
+
+.perfilMain {
+    padding: 30px;
+    background: rgb(77, 77, 77);
+    border-radius: 30px;
+}
+
+.corpoPerfil {
+    background-color: #23272A;
+    color: whitesmoke;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fotoUsuario {
+    max-width: 250px;
+    border-style: inset;
+    border-color: #5865F2;
+    border-radius: 50%;
+}
+
+.perfilLinks {
+    text-decoration: none !important;
+    font-size: 20px;
+    color: whitesmoke !important;
+}
+
+.sectionPerfil {
+    background-color: #5865F2;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+.configImg {
+    width: 25px;
+    height: 25px;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* criar videos */
+.quadrado {
+    display: grid;
+    width: 600px;
+    height: 700px;
+    background-color: #575656;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.inputVideo {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+  
+.inputBottom {
+    background: #23A0FF;
+    width: 150px;
+    height: 50px;
+    margin-left: 36%;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.textinho {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 20px;
+    color: white;
+    font-size: 19px;
+}
